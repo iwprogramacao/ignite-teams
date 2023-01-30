@@ -1,0 +1,16 @@
+/* global PF
+ * @author Pedro
+ * 
+ * Funções para habilitar/desabilitar botão por "WidgetVar"
+ */
+const habilitarBotao = (botaoWV) => {
+    if (botaoWV) {
+        PF(botaoWV).enable();
+    }
+};
+
+const desabilitarBotao = (botaoWV) => {
+    if (botaoWV) {
+        PF(botaoWV).disable();
+    }
+};
